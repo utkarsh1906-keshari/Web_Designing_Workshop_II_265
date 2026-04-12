@@ -18,7 +18,6 @@ function calculateResult() {
     }
     let averageMarks = totalMarks / numSubjects;
     averageMarks = parseFloat(averageMarks.toFixed(2));
-    // Step 5: Determine grade
     let grade;
     let gradeClass;
     if (averageMarks >= 90) {
