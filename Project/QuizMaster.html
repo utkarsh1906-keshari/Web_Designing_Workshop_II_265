@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="./QuizMaster.css">
+</head>
+<body>
+<div id="qm">
+<h2 class="sr-only">Quiz Master — Interactive quiz application with multiple categories, timed questions, and score tracking</h2>
+
+<div id="home" class="screen active">
+  <div class="header">
+    <div class="logo">Quiz<span>Master</span></div>
+  </div>
+  <p class="section-label">Select a category to begin</p>
+  <div class="cats" id="cat-grid"></div>
+  <button class="start-btn" id="start-btn" disabled>Select a category to start</button>
+</div>
+
+<div id="quiz" class="screen">
+  <div class="progress-bar"><div class="progress-fill" id="prog"></div></div>
+  <div class="q-meta">
+    <span class="q-num" id="q-num"></span>
+    <span class="timer" id="timer">15s</span>
+  </div>
+  <div class="q-text" id="q-text"></div>
+  <div class="options" id="options"></div>
+  <div class="feedback" id="feedback"></div>
+  <button class="next-btn" id="next-btn">Next question →</button>
+</div>
+<div id="results" class="screen">
+  <div class="header"><div class="logo">Quiz<span>Master</span></div></div>
+  <div class="grade" id="grade-area"></div>
+  <div class="stats" id="stats-area"></div>
+  <p class="section-label">Question review</p>
+  <div class="breakdown" id="breakdown"></div>
+  <button class="play-again" onclick="reset()">Play again</button>
+</div>
+</div>
+<script src="QuizMaster.js"> </script>
+</body>
+</html>
